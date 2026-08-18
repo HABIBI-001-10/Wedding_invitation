@@ -1,32 +1,79 @@
-# React + TypeScript + Vite
+# 💐 Evelyn & Alexander — Premium Wedding Invitation
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A cinematic, ultra-premium **interactive digital wedding invitation** built with React + Vite + TypeScript, featuring:
 
-Currently, two official plugins are available:
+- 🌸 **60fps Canvas Blossom Petal Engine** — physics-based falling petals with depth & wind
+- 🕯️ **Wax Seal Envelope Opening** — animated luxury reveal ceremony
+- 🎵 **Procedural Romantic Music** — Web Audio API piano & harp synthesizer
+- 📖 **Our Story Timeline** — floating parallax scroll narrative
+- 🖼️ **Cinematic Gallery** — full-screen image carousels
+- 🗺️ **Interactive Venue Map** — embedded with directions
+- ✉️ **RSVP Form** — animated guest response
+- ✨ **Glassmorphism UI** — premium frosted-glass components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Deploy to GitHub Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Step 1 — Push your code to GitHub
 
-## Expanding the Oxlint configuration
+If you haven't already, create a repo named **`Wedding_invitation`** on GitHub, then run:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+cd "c:\Users\cozme\Desktop\invitation"
+git init
+git add .
+git commit -m "✨ Initial commit — Premium Wedding Invitation"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/Wedding_invitation.git
+git push -u origin main
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+> Replace `YOUR_USERNAME` with your GitHub username.
+
+### Step 2 — Enable GitHub Pages
+
+1. Go to your repo → **Settings** → **Pages**
+2. Under **Source**, select **GitHub Actions**
+3. Click **Save**
+
+That's it! 🎉 The `.github/workflows/deploy.yml` workflow will automatically build and deploy on every push to `main`.
+
+### Step 3 — Visit your live invitation
+
+Your invitation will be live at:
+
+```
+https://YOUR_USERNAME.github.io/Wedding_invitation/
+```
+
+> **First deploy takes ~2 minutes.** Check the **Actions** tab in your repo to watch it build.
+
+---
+
+## 🛠️ Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173/Wedding_invitation/](http://localhost:5173/Wedding_invitation/)
+
+## 📦 Build
+
+```bash
+npm run build
+```
+
+The production-ready files are output to `dist/`.
+
+---
+
+## ✏️ Customize
+
+All wedding details (names, dates, venue, events, RSVP, photos) live in one file:
+
+**[`src/config/weddingConfig.ts`](./src/config/weddingConfig.ts)**
+
+Edit that file to make this invitation your own!

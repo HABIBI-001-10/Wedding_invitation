@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { weddingConfig } from '../config/weddingConfig';
 import { ChevronDown, Sparkles } from 'lucide-react';
+import { assetUrl } from '../utils/assetUrl';
 
 export const HeroSection: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -29,7 +30,7 @@ export const HeroSection: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-100 ease-out will-change-transform animate-branch"
         style={{
-          backgroundImage: `url('/images/hero_tree.jpg')`,
+          backgroundImage: `url('${assetUrl('/images/hero_tree.jpg')}')`,
           transform: `translateY(${scrollY * 0.25}px) scale(1.05)`,
         }}
       />

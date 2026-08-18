@@ -2,6 +2,7 @@ import React from 'react';
 import { weddingConfig } from '../config/weddingConfig';
 import { Sparkles, ArrowUp } from 'lucide-react';
 import { weddingAudio } from '../audio/soundEffects';
+import { assetUrl } from '../utils/assetUrl';
 
 interface FinalSectionProps {
   onTriggerShower: () => void;
@@ -22,7 +23,7 @@ export const FinalSection: React.FC<FinalSectionProps> = ({ onTriggerShower }) =
       id="closing"
       className="relative min-h-[85vh] w-full flex items-center justify-center overflow-hidden bg-[#1A1414] text-white py-24 px-4 text-center"
       style={{
-        backgroundImage: `radial-gradient(circle at center, rgba(30, 22, 23, 0.7) 0%, rgba(15, 10, 11, 0.95) 85%), url('/images/hero_tree.jpg')`,
+        backgroundImage: `radial-gradient(circle at center, rgba(30, 22, 23, 0.7) 0%, rgba(15, 10, 11, 0.95) 85%), url('${assetUrl('/images/hero_tree.jpg')}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

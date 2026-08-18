@@ -2,6 +2,7 @@ import React from 'react';
 import { weddingConfig } from '../config/weddingConfig';
 import { Heart } from 'lucide-react';
 import { weddingAudio } from '../audio/soundEffects';
+import { assetUrl } from '../utils/assetUrl';
 
 export const CoupleSection: React.FC = () => {
   const handleHeartClick = () => {
@@ -75,7 +76,7 @@ export const CoupleSection: React.FC = () => {
               {/* Main Image Container */}
               <div className="relative overflow-hidden rounded-[2rem] bg-[#F5EDE0] shadow-2xl aspect-[3/4] border-2 border-[#FAF6F2]">
                 <img
-                  src="/images/couple_portrait.jpg"
+                  src={assetUrl("/images/couple_portrait.jpg")}
                   alt="Evelyn and Alexander"
                   className="w-full h-full object-cover object-center transition-transform duration-1000 ease-out group-hover:scale-105"
                   loading="lazy"

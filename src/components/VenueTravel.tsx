@@ -1,6 +1,7 @@
 import React from 'react';
 import { weddingConfig } from '../config/weddingConfig';
 import { MapPin, Navigation, Car, Bus, Hotel } from 'lucide-react';
+import { assetUrl } from '../utils/assetUrl';
 
 export const VenueTravel: React.FC = () => {
   return (
@@ -36,7 +37,7 @@ export const VenueTravel: React.FC = () => {
             {/* Image Preview Side */}
             <div className="lg:col-span-7 relative min-h-[340px] lg:min-h-full">
               <img
-                src="/images/reception.jpg"
+                src={assetUrl("/images/reception.jpg")}
                 alt={weddingConfig.venue.name}
                 className="w-full h-full object-cover object-center"
                 loading="lazy"

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { weddingConfig } from '../config/weddingConfig';
 import { weddingAudio } from '../audio/soundEffects';
 import { Sparkles, Heart } from 'lucide-react';
+import { assetUrl } from '../utils/assetUrl';
 
 interface OpeningEnvelopeProps {
   onOpen: () => void;
@@ -40,7 +41,7 @@ export const OpeningEnvelope: React.FC<OpeningEnvelopeProps> = ({ onOpen }) => {
         isFadingOut ? 'pointer-events-none opacity-0' : 'opacity-100'
       }`}
       style={{
-        backgroundImage: `radial-gradient(circle at center, rgba(232, 197, 200, 0.18) 0%, rgba(20, 15, 16, 0.95) 75%), url('/images/hero_tree.jpg')`,
+        backgroundImage: `radial-gradient(circle at center, rgba(232, 197, 200, 0.18) 0%, rgba(20, 15, 16, 0.95) 75%), url('${assetUrl('/images/hero_tree.jpg')}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

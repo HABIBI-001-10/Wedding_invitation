@@ -5,6 +5,8 @@
  * timeline events, photos, venue links, and registry information here.
  */
 
+import { assetUrl } from '../utils/assetUrl';
+
 export interface EventItem {
   id: string;
   time: string;
@@ -178,7 +180,7 @@ export const weddingConfig = {
       title: "A Serendipitous Encounter",
       subtitle: "The Paris Botanical Gardens",
       narrative: "Under a canopy of blooming sakura blossoms, both reaching for the same botanical botany book in a quaint Latin Quarter bookstore. One shared smile turned into a four-hour stroll across the Seine.",
-      image: "/images/first_date.jpg"
+      image: assetUrl("/images/first_date.jpg")
     },
     {
       id: "chapter-2",
@@ -186,7 +188,7 @@ export const weddingConfig = {
       title: "The First Chapter",
       subtitle: "Roadtrips & Quiet Moments",
       narrative: "Countless shared sunrises, cooking experiments that turned into laughter, and discovering that home isn't a place, but a person.",
-      image: "/images/couple_portrait.jpg"
+      image: assetUrl("/images/couple_portrait.jpg")
     },
     {
       id: "chapter-3",
@@ -194,7 +196,7 @@ export const weddingConfig = {
       title: "The Proposal",
       subtitle: "A Lantern-Lit Sanctuary",
       narrative: "Surrounded by hundreds of glowing lanterns and blooming cherry branches at dusk, Alexander knelt down with a vintage heirloom ring. Through joyful tears, Evelyn said 'A thousand times, yes!'",
-      image: "/images/proposal.jpg"
+      image: assetUrl("/images/proposal.jpg")
     },
     {
       id: "chapter-4",
@@ -202,7 +204,7 @@ export const weddingConfig = {
       title: "Forever Begins",
       subtitle: "Our Wedding Day",
       narrative: "Surrounded by our dearest family and cherished friends, we step hand-in-hand into the grandest adventure of our lives.",
-      image: "/images/reception.jpg"
+      image: assetUrl("/images/reception.jpg")
     }
   ] as StoryChapter[],
 
@@ -210,42 +212,42 @@ export const weddingConfig = {
   gallery: [
     {
       id: "gal-1",
-      src: "/images/couple_portrait.jpg",
+      src: assetUrl("/images/couple_portrait.jpg"),
       alt: "Evelyn & Alexander Fine Art Portrait",
       caption: "Eternal Embrace beneath the Blossom Tree",
       category: "portraits"
     },
     {
       id: "gal-2",
-      src: "/images/hero_tree.jpg",
+      src: assetUrl("/images/hero_tree.jpg"),
       alt: "The Grand Estate & Garden Pathway",
       caption: "The Rosewood Blossom Grounds at Golden Hour",
       category: "venue"
     },
     {
       id: "gal-3",
-      src: "/images/proposal.jpg",
+      src: assetUrl("/images/proposal.jpg"),
       alt: "Lantern-lit Proposal Evening",
       caption: "The Twilight Lantern Proposal",
       category: "moments"
     },
     {
       id: "gal-4",
-      src: "/images/reception.jpg",
+      src: assetUrl("/images/reception.jpg"),
       alt: "Grand Glass Conservatory Tablescape",
       caption: "Crystal Chandeliers & Candlelit Banquet",
       category: "venue"
     },
     {
       id: "gal-5",
-      src: "/images/details.jpg",
+      src: assetUrl("/images/details.jpg"),
       alt: "Handcrafted Wedding Rings & Letterpress Calligraphy",
       caption: "Heirloom Gold Rings on Blush Velvet",
       category: "details"
     },
     {
       id: "gal-6",
-      src: "/images/first_date.jpg",
+      src: assetUrl("/images/first_date.jpg"),
       alt: "Spring Blossom Stroll in Bloom",
       caption: "Laughter in the Sun-Dappled Garden",
       category: "moments"

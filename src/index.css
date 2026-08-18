@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cinzel', serif;
+    --font-script: 'Pinyon Script', cursive;
+    --font-editorial: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    --color-blush: #F7EAE8;
+    --color-blush-deep: #E8CAC8;
+    --color-rose: #D99B9B;
+    --color-champagne: #F5EDE0;
+    --color-gold: #C5A059;
+    --color-gold-light: #E6CA85;
+    --color-gold-dark: #9A7B38;
+    --color-ivory: #FCFAF7;
+    --color-sage: #8A9A86;
+    --color-charcoal: #362D2D;
+    --color-muted: #736765;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+
+  .font-display-luxury {
+    font-family: var(--font-display);
+    letter-spacing: 0.15em;
+  }
+
+  .font-script-luxury {
+    font-family: var(--font-script);
+  }
+
+  .font-editorial-luxury {
+    font-family: var(--font-editorial);
+  }
+}
+
+/* Luxury Gold & Shimmer utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #C5A059 0%, #E6CA85 45%, #B38E46 70%, #DFC17B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(135deg, #C5A059, #F5EDE0, #C5A059) 1;
+}
+
+.gold-box-shadow {
+  box-shadow: 0 10px 30px -10px rgba(197, 160, 89, 0.25), 0 0 1px 1px rgba(197, 160, 89, 0.15);
+}
+
+.blush-glass {
+  background: rgba(252, 248, 246, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(232, 202, 200, 0.35);
+}
+
+.dark-blush-glass {
+  background: rgba(45, 36, 36, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(197, 160, 89, 0.25);
+}
+
+.paper-deckled {
+  box-shadow: 0 15px 45px -10px rgba(60, 45, 45, 0.12), 0 0 0 1px rgba(217, 185, 175, 0.25);
+}
+
+/* Subtle animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes branchSway {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(0.4deg) scale(1.005);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+.animate-branch {
+  animation: branchSway 12s ease-in-out infinite alternate;
+}
+
+.shimmer-button {
+  background: linear-gradient(90deg, #b8944f 0%, #e6ca85 50%, #b8944f 100%);
+  background-size: 200% auto;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shimmer-button:hover {
+  background-position: right center;
+  box-shadow: 0 12px 28px -6px rgba(197, 160, 89, 0.4);
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #E0C7C4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}

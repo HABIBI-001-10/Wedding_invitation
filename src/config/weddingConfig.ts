@@ -54,122 +54,88 @@ export const weddingConfig = {
   // Couple Information
   couple: {
     bride: {
-      firstName: "Evelyn",
-      middleName: "Rose",
-      lastName: "Vance",
-      fullName: "Evelyn Rose Vance",
-      parents: "Daughter of Mr. Arthur & Mrs. Clara Vance",
-      bio: "An architect with a passion for classical gardens, fine art, and quiet morning coffees."
+      firstName: "Aswathi",
+      middleName: "",
+      lastName: "A",
+      fullName: "Aswathi A",
+      parents: "Daughter of Mr. Manikandan & Mrs. Anitha K S",
+      bio: "A Business Development Executive who brings warmth, ambition, and a thoughtful spirit to every chapter of life."
     },
     groom: {
-      firstName: "Alexander",
-      middleName: "James",
-      lastName: "Sterling",
-      fullName: "Alexander James Sterling",
-      parents: "Son of Dr. Jonathan & Mrs. Eleanor Sterling",
-      bio: "A landscape designer and cellist who finds boundless beauty in nature and timeless melodies."
+      firstName: "Habeeb",
+      middleName: "",
+      lastName: "T",
+      fullName: "Habeeb T",
+      parents: "Son of Sidhik T & Mrs. Shameera P",
+      bio: "An AI Engineer passionate about technology, innovation, and building a meaningful future together."
     },
-    monogram: "E & A",
+    monogram: "H & A",
     invitationLine: "Together with their loving families",
     actionLine: "request the pleasure of your company to celebrate their marriage",
     romanticQuote: "Two hearts, one beautiful journey under the blossom trees.",
-    loveQuoteFull: "In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.",
-    quoteAuthor: "Maya Angelou",
+    loveQuoteFull: "What began as a college friendship grew into a love strong enough to bring two worlds, two traditions, and two families together",
+    quoteAuthor: "Habeeb & Aswathi",
   },
 
   // Wedding Date & Time
   date: {
-    // Target date for countdown (Set in future: August 29, 2026 at 15:30)
-    targetISO: "2026-08-29T15:30:00+02:00",
-    day: "29",
-    month: "AUGUST",
-    year: "2026",
-    dayOfWeek: "SATURDAY",
-    formattedDate: "Saturday, August 29, 2026",
-    timeDisplay: "Three o'clock in the afternoon",
-    receptionTime: "Five o'clock in the evening",
+    // Target date for countdown (Set in future: December 21, 2028 at 10:00)
+    targetISO: "2028-12-21T10:00:00+05:30",
+    day: "21",
+    month: "DECEMBER",
+    year: "2028",
+    dayOfWeek: "THURSDAY",
+    formattedDate: "Thursday, December 21, 2028",
+    timeDisplay: "Nikah Ceremony",
+    receptionTime: "Friday evening, December 22, 2028",
   },
 
   // Primary Venue Details
   venue: {
-    name: "The Rosewood Blossom Estate & Conservatory",
-    hall: "Grand Glass Orangery & Botanical Pavilions",
-    address: "742 Blossom Hill Road, Cote d'Azur Valley, France",
-    googleMapsUrl: "https://maps.google.com/?q=Chateau+de+Chantilly+France",
-    appleMapsUrl: "http://maps.apple.com/?q=Chateau+de+Chantilly+France",
-    parkingInfo: "Complimentary valet parking is provided at the main estate gates.",
-    shuttleInfo: "Private luxury shuttles will depart from Hotel Le Jardin every 30 minutes starting at 2:00 PM.",
-    dressCodeSummary: "Black Tie & Romantic Garden Formal",
+    name: "Kumarakom Lake Resort",
+    hall: "Luxury Lakeside Destination Wedding",
+    address: "Kumarakom, Kottayam, Kerala, India",
+    googleMapsUrl: "https://maps.google.com/?q=Kumarakom+Lake+Resort+Kerala",
+    appleMapsUrl: "http://maps.apple.com/?q=Kumarakom+Lake+Resort+Kerala",
+    parkingInfo: "Complimentary parking facilities are available for wedding guests.",
+    shuttleInfo: "Guest transportation details will be shared closer to the wedding.",
+    dressCodeSummary: "Elegant Traditional & Destination Wedding Formal",
   },
 
   // Wedding Events / Timeline
   events: [
     {
-      id: "ceremony",
-      time: "3:30 PM — 4:45 PM",
-      title: "The Holy Matrimony Ceremony",
-      subtitle: "Under the Ancient Blossom Tree",
-      venue: "The Central Blossom Garden",
-      address: "Rosewood Blossom Estate, Main Courtyard",
-      description: "Exchange of vows and rings as flower petals drift gently on the summer breeze, accompanied by a live string quartet.",
-      mapUrl: "https://maps.google.com/?q=Chateau+de+Chantilly+France",
+      id: "nikah",
+      time: "December 21, 2028",
+      title: "The Nikah Ceremony",
+      subtitle: "A Sacred Beginning to Forever",
+      venue: "Guruvayur",
+      address: "Guruvayur, Thrissur, Kerala, India",
+      description: "A heartfelt Nikah ceremony marking the beginning of Habeeb and Aswathi's journey together, bringing two families and two traditions together with love and respect.",
+      mapUrl: "https://maps.google.com/?q=Guruvayur+Kerala",
       calendarData: {
-        startDate: "20260829T133000Z",
-        endDate: "20260829T144500Z",
-        summary: "Evelyn & Alexander Wedding Ceremony",
-        description: "Wedding ceremony under the blossom tree at Rosewood Blossom Estate.",
-        location: "Rosewood Blossom Estate, 742 Blossom Hill Road",
+        startDate: "20281221T043000Z",
+        endDate: "20281221T063000Z",
+        summary: "Habeeb & Aswathi Nikah Ceremony",
+        description: "Nikah ceremony for Habeeb and Aswathi in Guruvayur.",
+        location: "Guruvayur, Thrissur, Kerala, India",
       }
     },
     {
-      id: "cocktail",
-      time: "5:00 PM — 6:30 PM",
-      title: "Champagne & Garden Hors D'oeuvres",
-      subtitle: "Aperitifs & Golden Hour Melodies",
-      venue: "The Rose Stone Terrace & Fountains",
-      address: "West Wing Botanical Gardens",
-      description: "Sip vintage Rosé champagne and signature botanic cocktails while enjoying acoustic jazz and panoramic sunset views.",
-      mapUrl: "https://maps.google.com/?q=Chateau+de+Chantilly+France",
+      id: "reception",
+      time: "December 22, 2028 — Evening",
+      title: "The Destination Wedding Reception",
+      subtitle: "Love by the Backwaters",
+      venue: "Kumarakom Lake Resort",
+      address: "Kumarakom, Kottayam, Kerala, India",
+      description: "An elegant destination celebration by the Kerala backwaters, bringing family and friends together for an evening of dinner, music, laughter, and unforgettable memories.",
+      mapUrl: "https://maps.google.com/?q=Kumarakom+Lake+Resort+Kerala",
       calendarData: {
-        startDate: "20260829T150000Z",
-        endDate: "20260829T163000Z",
-        summary: "Evelyn & Alexander Cocktail Reception",
-        description: "Cocktail hour on the stone terrace.",
-        location: "Rosewood Blossom Estate",
-      }
-    },
-    {
-      id: "dinner",
-      time: "6:45 PM — 9:30 PM",
-      title: "The Grand Wedding Banquet",
-      subtitle: "Four-Course Gastronomic Dinner",
-      venue: "The Crystal Glass Conservatory",
-      address: "Grand Orangery Pavilion",
-      description: "A candlelit feast beneath crystal chandeliers and floral arches, accompanied by heartfelt toasts and our first dance.",
-      mapUrl: "https://maps.google.com/?q=Chateau+de+Chantilly+France",
-      calendarData: {
-        startDate: "20260829T164500Z",
-        endDate: "20260829T193000Z",
-        summary: "Evelyn & Alexander Wedding Dinner & Reception",
-        description: "Grand dinner in the glass conservatory.",
-        location: "Rosewood Blossom Estate",
-      }
-    },
-    {
-      id: "afterparty",
-      time: "9:45 PM — 2:00 AM",
-      title: "Dancing & Midnight Fireworks",
-      subtitle: "Celebration Under the Stars",
-      venue: "The Lantern Grove & Ballroom",
-      address: "East Pavilion Estate",
-      description: "Midnight champagne toast, artisan dessert stations, live band, and fireworks over the blossom lake.",
-      mapUrl: "https://maps.google.com/?q=Chateau+de+Chantilly+France",
-      calendarData: {
-        startDate: "20260829T194500Z",
-        endDate: "20260830T000000Z",
-        summary: "Evelyn & Alexander Afterparty & Fireworks",
-        description: "Dancing and fireworks celebration.",
-        location: "Rosewood Blossom Estate",
+        startDate: "20281222T133000Z",
+        endDate: "20281222T183000Z",
+        summary: "Habeeb & Aswathi Wedding Reception",
+        description: "Destination wedding reception at Kumarakom Lake Resort.",
+        location: "Kumarakom Lake Resort, Kumarakom, Kerala, India",
       }
     }
   ] as EventItem[],
@@ -178,35 +144,35 @@ export const weddingConfig = {
   story: [
     {
       id: "chapter-1",
-      year: "Spring 2021",
-      title: "A Serendipitous Encounter",
-      subtitle: "The Paris Botanical Gardens",
-      narrative: "Under a canopy of blooming sakura blossoms, both reaching for the same botanical botany book in a quaint Latin Quarter bookstore. One shared smile turned into a four-hour stroll across the Seine.",
-      image: assetUrl("/images/first_date.jpg")
+      year: "College Days",
+      title: "Where It All Began",
+      subtitle: "A College Love Story",
+      narrative: "Two people from different backgrounds met during their college years. What began with conversations, friendship, and shared moments slowly became a love neither of them could imagine living without.",
+      image: assetUrl("/images/college.jpeg")
     },
     {
       id: "chapter-2",
-      year: "Autumn 2022",
-      title: "The First Chapter",
-      subtitle: "Roadtrips & Quiet Moments",
-      narrative: "Countless shared sunrises, cooking experiments that turned into laughter, and discovering that home isn't a place, but a person.",
-      image: assetUrl("/images/couple_portrait.jpg")
+      year: "The Journey",
+      title: "Two Traditions, One Love",
+      subtitle: "Growing Together",
+      narrative: "Their journey brought together two families, two traditions, and two perspectives. Through every challenge and every beautiful moment, their love continued to grow with understanding, respect, and patience.",
+      image: assetUrl("/images/beach.png")
     },
     {
       id: "chapter-3",
-      year: "Spring 2025",
-      title: "The Proposal",
-      subtitle: "A Lantern-Lit Sanctuary",
-      narrative: "Surrounded by hundreds of glowing lanterns and blooming cherry branches at dusk, Alexander knelt down with a vintage heirloom ring. Through joyful tears, Evelyn said 'A thousand times, yes!'",
-      image: assetUrl("/images/proposal.jpg")
+      year: "The Promise",
+      title: "Choosing Forever",
+      subtitle: "A Love Beyond Differences",
+      narrative: "What started as a college romance became a promise to build a life together. Their story is a celebration of love that embraces differences while finding common ground in the things that matter most.",
+      image: assetUrl("/images/proposal.png")
     },
     {
       id: "chapter-4",
-      year: "August 2026",
+      year: "December 2028",
       title: "Forever Begins",
-      subtitle: "Our Wedding Day",
-      narrative: "Surrounded by our dearest family and cherished friends, we step hand-in-hand into the grandest adventure of our lives.",
-      image: assetUrl("/images/reception.jpg")
+      subtitle: "Habeeb & Aswathi",
+      narrative: "On December 21, 2028, their journey enters a beautiful new chapter. With the Nikah in Guruvayur and a destination celebration by the Kerala backwaters, two hearts and two families come together as one.",
+      image: assetUrl("/images/destination.jpg")
     }
   ] as StoryChapter[],
 
@@ -214,84 +180,79 @@ export const weddingConfig = {
   gallery: [
     {
       id: "gal-1",
-      src: assetUrl("/images/couple_portrait.jpg"),
-      alt: "Evelyn & Alexander Fine Art Portrait",
-      caption: "Eternal Embrace beneath the Blossom Tree",
+      src: assetUrl("/images/marraige.png"),
+      alt: "Habeeb & Aswathi — A Love Story",
+      caption: "Two Hearts, One Journey",
       category: "portraits"
     },
     {
       id: "gal-2",
-      src: assetUrl("/images/hero_tree.jpg"),
-      alt: "The Grand Estate & Garden Pathway",
-      caption: "The Rosewood Blossom Grounds at Golden Hour",
+      src: assetUrl("/images/destination.jpg"),
+      alt: "Kerala Destination Wedding",
+      caption: "A Celebration by the Backwaters",
       category: "venue"
     },
     {
       id: "gal-3",
-      src: assetUrl("/images/proposal.jpg"),
-      alt: "Lantern-lit Proposal Evening",
-      caption: "The Twilight Lantern Proposal",
+      src: assetUrl("/images/proposal.png"),
+      alt: "The Journey That Led to Forever",
+      caption: "A Love That Chose Forever",
       category: "moments"
     },
     {
       id: "gal-4",
-      src: assetUrl("/images/reception.jpg"),
-      alt: "Grand Glass Conservatory Tablescape",
-      caption: "Crystal Chandeliers & Candlelit Banquet",
+      src: assetUrl("/images/backwaters.jpg"),
+      alt: "Destination Wedding Celebration",
+      caption: "An Evening of Love & Togetherness",
       category: "venue"
     },
     {
       id: "gal-5",
-      src: assetUrl("/images/details.jpg"),
-      alt: "Handcrafted Wedding Rings & Letterpress Calligraphy",
-      caption: "Heirloom Gold Rings on Blush Velvet",
+      src: assetUrl("/images/card.png"),
+      alt: "Details of a Beautiful Beginning",
+      caption: "Symbols of Forever",
       category: "details"
     },
     {
       id: "gal-6",
-      src: assetUrl("/images/first_date.jpg"),
-      alt: "Spring Blossom Stroll in Bloom",
-      caption: "Laughter in the Sun-Dappled Garden",
+      src: assetUrl("/images/college.jpeg"),
+      alt: "Memories from Their College Days",
+      caption: "Where Their Story Began",
       category: "moments"
     }
   ] as GalleryPhoto[],
 
   // Dress Code Palette
   dressCode: {
-    title: "Black Tie & Romantic Garden Formal",
-    subtitle: "Inspired by Soft Blossoms & Natural Elegance",
-    gentlemen: "Tailored Tuxedo, Velvet Dinner Jacket, or Classic Dark Suit with bow tie.",
-    ladies: "Floor-length evening gowns or elevated cocktail attire in soft pastel tones, floral textures, or neutral hues.",
-    notes: "We kindly request our guests avoid stark white or bright neon colors.",
+    title: "Elegant Traditional & Destination Wedding Formal",
+    subtitle: "Inspired by Kerala's timeless beauty and the couple's two traditions",
+    gentlemen: "Traditional Kerala attire, kurta, sherwani, or elegant formalwear.",
+    ladies: "Kerala saree, elegant saree, lehenga, or graceful traditional formalwear.",
+    notes: "Guests are warmly encouraged to celebrate the occasion in elegant traditional or formal attire.",
     colorPalette: [
-      { name: "Blush Rose", hex: "#E8C5C8", description: "Delicate spring petal tone" },
-      { name: "Dusty Peony", hex: "#D69F9F", description: "Warm romantic rose" },
-      { name: "Champagne", hex: "#F3E7D3", description: "Soft shimmering neutral" },
-      { name: "Muted Sage", hex: "#9EADA0", description: "Natural botanical green" },
-      { name: "Midnight Charcoal", hex: "#2C2627", description: "Classic formal contrast" },
+      { name: "Kerala Ivory", hex: "#F4EBDD", description: "Warm traditional neutral" },
+      { name: "Mullapoo White", hex: "#FFFDF7", description: "Soft jasmine-inspired white" },
+      { name: "Backwater Green", hex: "#9EADA0", description: "Serene Kerala botanical tone" },
+      { name: "Rose Gold", hex: "#D69F9F", description: "Warm romantic accent" },
+      { name: "Deep Charcoal", hex: "#2C2627", description: "Elegant formal contrast" },
     ] as ColorSwatch[]
   },
 
   // Blessings & Gift Registry
-  registry: {
-    message: "Your presence, love, and warm wishes are the greatest gift we could ever receive.",
-    submessage: "For those who have kindly asked for registry details or wish to contribute to our honeymoon dream voyage to Japan's cherry blossom gardens, we have established a couple's fund.",
-    funds: [
-      {
-        title: "Honeymoon In Kyoto Fund",
-        accountName: "Evelyn & Alexander Wedding",
-        iban: "FR76 3000 4000 5000 6000 7000 890",
-        swift: "BNPAFRPPXXX",
-        description: "For traditional ryokan stays & temple garden tours"
-      },
-      {
-        title: "New Home & Garden Sanctuary",
-        accountName: "Alexander Sterling & Evelyn Vance",
-        zelleOrUpi: "love@evelyn-alexander.com",
-        description: "For our greenhouse restoration & botanic library"
-      }
-    ]
-  },
+  // Blessings & Gift Registry
+registry: {
+  message: "Your presence, love, and warm wishes are the greatest gift we could ever receive.",
+  submessage: "For those who have kindly asked, we are dreaming of a romantic honeymoon in the Maldives — turquoise waters, sunset evenings, and a few peaceful days together by the sea.",
+  funds: [
+    {
+      title: "Honeymoon in the Maldives Fund",
+      accountName: "Habeeb & Aswathi Wedding",
+      description: "For our dream honeymoon in the Maldives — island sunsets, overwater stays, and beautiful memories together.",
+      iban: "",
+      zelleOrUpi: ""
+    }
+  ]
+},
 
   // RSVP Configuration
   rsvp: {
@@ -305,8 +266,8 @@ export const weddingConfig = {
       "Nut Allergy",
       "Halal / Kosher"
     ],
-    maxGuestsPerInvite: 4,
-    contactEmail: "concierge@evelyn-alexander.wedding",
+    maxGuestsPerInvite: 6,
+    contactEmail: "concierge@aswathi-habeeb.wedding",
   },
 
   // Audio / Music Settings

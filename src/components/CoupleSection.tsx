@@ -76,7 +76,7 @@ export const CoupleSection: React.FC = () => {
               {/* Main Image Container */}
               <div className="relative overflow-hidden rounded-[2rem] bg-[#F5EDE0] shadow-2xl aspect-[3/4] border-2 border-[#FAF6F2]">
                 <img
-                  src={assetUrl("/images/couple_portrait.jpg")}
+                  src={assetUrl("/images/first_date.png")}
                   alt="Evelyn and Alexander"
                   className="w-full h-full object-cover object-center transition-transform duration-1000 ease-out group-hover:scale-105"
                   loading="lazy"

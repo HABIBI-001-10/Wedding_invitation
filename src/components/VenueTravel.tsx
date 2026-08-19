@@ -37,7 +37,7 @@ export const VenueTravel: React.FC = () => {
             {/* Image Preview Side */}
             <div className="lg:col-span-7 relative min-h-[340px] lg:min-h-full">
               <img
-                src={assetUrl("/images/reception.jpg")}
+                src={assetUrl("/images/destination.jpg")}
                 alt={weddingConfig.venue.name}
                 className="w-full h-full object-cover object-center"
                 loading="lazy"

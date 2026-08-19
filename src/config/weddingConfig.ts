@@ -6,6 +6,8 @@
  */
 
 import { assetUrl } from '../utils/assetUrl';
+import One__Direction from '../assets/one_direction.mp3';
+
 
 export interface EventItem {
   id: string;
@@ -310,9 +312,9 @@ export const weddingConfig = {
   // Audio / Music Settings
   audio: {
     enabled: true,
-    songTitle: "Clair de Lune & Blossom Garden Harmony",
-    artist: "Romantic Piano & Harp Ensemble",
+    songTitle: "Night Changes",
+    artist: "One Direction",
     // Can be replaced with any direct MP3 URL. If null or not reachable, the Web Audio Synth plays smoothly.
-    customAudioUrl: null as string | null,
+    customAudioUrl: One__Direction,
   }
 };

@@ -117,26 +117,30 @@ class WeddingAudioManager {
    * Plays a delicate, soothing piano & harp procedural harmony in D Major / F# Minor
    */
   public startMusic(customAudioUrl?: string | null) {
-    if (this.isPlayingMusic) return;
-
     if (customAudioUrl) {
+      this.stopMusic();
+
       try {
         if (!this.customAudio) {
           this.customAudio = new Audio(customAudioUrl);
           this.customAudio.loop = true;
           this.customAudio.volume = this.masterVolume;
         }
+
         this.customAudio.play().then(() => {
           this.isPlayingMusic = true;
-        }).catch(() => {
-          this.startProceduralPiano();
+        }).catch((error) => {
+          console.error("Error playing custom audio:", error);
         });
+
         return;
-      } catch {
-        this.startProceduralPiano();
+      } catch (error) {
+        console.error("Error initializing custom audio:", error);
         return;
       }
     }
+
+    if (this.isPlayingMusic) return;
 
     this.startProceduralPiano();
   }
